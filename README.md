@@ -1,4 +1,4 @@
-# NHTSA Complaints Heatmap
+# NHTSA Complaint Analysis
 
 The NHTSAComplaints.py provides a collection of analytical tools for studying complaints submitted to the NHTSA (National Highway Traffic Safety Administration). This includes:
 * Heatmaps displaying number of complaints, fires, crashes, etc. on a component level basis.
