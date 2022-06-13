@@ -60,6 +60,9 @@ class Vehicle:
 	def __str__(self):
 		return "{year} {make} {model}".format(year=self.year, make=self.make.upper(), model=self.model.upper())
 
+	def __eq__(self,other):
+		return (self.year==other.year) and (self.make==other.make) and (self.model==other.model)
+
 	def get_complaint_df(self):
 		
 		url = 'https://www.nhtsa.gov/webapi/api/Complaints/vehicle/modelyear/'+str(self.year)+'/make/'+self.make+'/model/'+self.model+'?format=csv'
@@ -135,6 +138,9 @@ class VehicleList:
 	def __str__(self):
 		L = [str(v) for v in self.vehicle_list]
 		return "{}".format(L)
+
+	def __eq__(self,other):
+		return self.vehicle_list==other.vehicle_list
 
 	
 	# this method returns a dictionary of the form {vehicle : complaint dataframe for vehicle} 
