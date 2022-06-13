@@ -24,6 +24,7 @@ cobalts_05_10.create_heatmap('ALL', 'complaints')
 
 
 ```cobalts_05_10.vehicle_list[0].comp_per_month(2011, 'STEERING', 'received')```
+
 ![](cobalt_steering.png)
 
 
