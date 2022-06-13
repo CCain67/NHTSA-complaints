@@ -28,6 +28,6 @@ cobalts_05_10.create_heatmap('ALL', 'complaints')
 
 
 ### In progress:
- 1. Many vehicles of different brands come from the same production lines and/or use similar parts. This suggests studying vehicles in "production groups" instead of single vehicles. A data set needs to be built which contains cars with 
+ 1. Many vehicles of different brands come from the same production lines and/or use similar parts. This suggests studying vehicles in "production groups" instead of single vehicles. A data set needs to be built which contains a list of cars that come from the same production line, or have the same base parts.
  2. Feature engineering for complaint time-series.
  3. NLP on complaint descriptions.
