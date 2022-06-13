@@ -4,7 +4,7 @@ This is a personal project based on the 2016-2020 strategic objectives stated by
 
 ### Motivation
 
-In 2016, the NHTSA released their strategic objectives for 2016-2020, in a document called "The Road Ahead", in which they outlined a data-driven approach to several strategic goals. In particular, their second strategic goal was proactive vehicle safety, which listed an enhancement of the Office of Defects Investigations (ODI) as an objective. The need for this enhancement was justified by the scrutiny the NHTSA came under following the GM ignition switch recalls in 2014. This suggested a need for more effective ways of identifying potential defects, which is the main goal of this project. 
+In 2016, the NHTSA released their strategic objectives for 2016-2020, in a document called "The Road Ahead", in which they outlined a data-driven approach to several strategic goals. In particular, their second strategic goal was proactive vehicle safety, which listed an enhancement of the Office of Defects Investigations (ODI) as an objective. The need for this enhancement was justified by the scrutiny the NHTSA came under following the GM ignition switch recalls in 2014. This suggested a need for more effective ways of identifying potential defects. The goal of this project is to produce a toolkit which makes potential defects easier to spot.
 
 ### About the data
 
