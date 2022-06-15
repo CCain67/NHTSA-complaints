@@ -63,6 +63,9 @@ class Vehicle:
 	def __eq__(self,other):
 		return (self.year==other.year) and (self.make==other.make) and (self.model==other.model)
 
+	def __hash__(self):
+		return hash((self.year, self.make, self.model))
+
 	def get_complaint_df(self):
 		
 		url = 'https://www.nhtsa.gov/webapi/api/Complaints/vehicle/modelyear/'+str(self.year)+'/make/'+self.make+'/model/'+self.model+'?format=csv'
@@ -141,6 +144,9 @@ class VehicleList:
 
 	def __eq__(self,other):
 		return self.vehicle_list==other.vehicle_list
+	
+	def __hash__(self):
+		return hash(self.vehicle_list)
 
 	
 	# this method returns a dictionary of the form {vehicle : complaint dataframe for vehicle} 
@@ -229,7 +235,7 @@ class VehicleList:
 			for j in range( len(components) ):
 				total_data[components[j]] = [ np.array([ 
 													data[key]['NUM_INJURED'][n] for n in range(len(data[key])) if components[j] in data[key]['COMPONENT'][n]
-													 	]).sum(dtype=np.int) 
+														]).sum(dtype=np.int) 
 															for key in data.keys()]
 		if value=='deaths':
 			for j in range( len(components) ):
