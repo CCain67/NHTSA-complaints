@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 from io import StringIO
+import json
 from datetime import datetime
 
 sns.set(rc={'axes.facecolor':'white', 'figure.facecolor':'white'})
@@ -127,6 +128,24 @@ class Vehicle:
 		ax.legend(loc='upper left')
 		plt.show()
 
+	
+	def get_production_group(self):
+		
+		with open('production_groups.json') as f:
+			data = json.loads(f.read())
+		
+			L = []
+
+			for key in range(len(data)):
+				
+				years = np.arange(data[key]['years'][0],data[key]['years'][1]+1)
+				makes = [str(make).lower() for make in data[key]['makes']]
+				models = [str(model).lower() for model in data[key]['models']]
+				
+				if (self.year in years) and (self.model.lower() in models) and (self.make in makes):
+					L = data[key]['vehicles']
+			return L
+			f.close()
 
 
 
