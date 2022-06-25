@@ -11,6 +11,12 @@ In 2016, the NHTSA released their strategic objectives for 2016-2020, in a docum
 The data for this project is pulled directly from the NHTSA's API. The data dictionaries are located in the materials_from_NHTSA/ folder. Directions for importing data may be found here:
 <https://www.nhtsa.gov/nhtsa-datasets-and-apis>
 
+### Current Trends:
+
+Here are the vehicles with the most number of complaints over the last 90 days (as of 6/23/2022):
+
+![](last_90_winners_6-23-2022.png)
+
 ### Examples
 
 A showcase of the current tools that have been developed is given in the ipython notebook NHTSA_complaints_analysis.ipynb. Some examples are given below. 
